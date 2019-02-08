@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUIZ: How Well Do You Know Kanye West?</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<img id="artwork" src="https://cdn.vox-cdn.com/thumbor/hcvwhUc0f4j3OYtrERQ3_tG--ck=/0x0:1080x1080/920x613/filters:focal(198x842:370x1014):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54074177/virgilabloh_2016-Feb-11.0.0.jpg"
+     alt="Life of Pablo album cover"/>
+<h1 id="title">QUIZ: How Well Do You Know Kanye West?</h1>
+
+<div id="main">
+<div class="qa-block">
+    <h2>Question 1</h2>
+    <div class="question">
+        <h3>The phrase "I love being bipolar. It's awesome," is featured on which of Kanye's album covers?</h3>
+    </div>
+    <blockquote class="answers">
+        <input type="radio" name="q1" value=1><cite>ye</cite><br>
+        <input type="radio" name="q1" value=0><cite>My Beautiful Dark Twisted Fantasy</cite><br>
+        <input type="radio" name="q1" value=0><cite>College Dropout</cite><br>
+        <input type="radio" name="q1" value=0><cite>The Life of Pablo</cite><br>
+        <input type="radio" name="q1" value=0><cite>Graduation</cite><br>
+    </blockquote>
+</div>
+
+<div class="qa-block">
+    <h2>Question 2</h2>
+    <div class="question">
+        <h3>Who is featured on Kanye’s hit “I Love It”?</h3>
+    </div>
+    <blockquote class="answers">
+        <input type="radio" name="q2" value=0>Lil Windex<br>
+        <input type="radio" name="q2" value=0>Biggie Smalls<br>
+        <input type="radio" name="q2" value=0>J. Cole<br>
+        <input type="radio" name="q2" value=1>Lil Pump<br>
+        <input type="radio" name="q2" value=0>Tupac<br>
+    </blockquote>
+</div>
+
+<div class="qa-block">
+    <h2>Question 3</h2>
+    <div class="question">
+        <h3>What is Kanye’s only #1 hit that doesn’t feature other artists?</h3>
+    </div>
+    <blockquote class="answers">
+        <input type="radio" name="q3" value=0>"Love Lockdown"<br>
+        <input type="radio" name="q3" value=0>"Jesus Walks"<br>
+        <input type="radio" name="q3" value=1>"Stronger"<br>
+        <input type="radio" name="q3" value=0>"Heartless"<br>
+        <input type="radio" name="q3" value=0>"All of the Lights"<br>
+    </blockquote>
+</div>
+
+<div class="qa-block">
+    <h2>Question 4</h2>
+    <div class="question">
+        <h3>Dialogue from which film is sampled on <cite>Watch the Throne</cite>'s "N*ggas in Paris"?</h3>
+    </div>
+    <blockquote class="answers">
+        <input type="radio" name="q4" value=0><cite>Anchorman</cite><br>
+        <input type="radio" name="q4" value=1><cite>Blades of Glory</cite><br>
+        <input type="radio" name="q4" value=0><cite>Midnight in Paris</cite><br>
+        <input type="radio" name="q4" value=0><cite>Step Brothers</cite><br>
+        <input type="radio" name="q4" value=0><cite>Talladega Nights</cite><br>
+    </blockquote>
+</div>
+
+<div class="qa-block">
+    <h2>Question 5</h2>
+    <div class="question">
+        <h3>Kanye West has never produced a song for which of these singers?</h3>
+    </div>
+    <blockquote class="answers">
+        <input type="radio" name="q5" value=0>Mariah Carey<br>
+        <input type="radio" name="q5" value=0>Christina Aguilera<br>
+        <input type="radio" name="q5" value=0>Rihanna<br>
+        <input type="radio" name="q5" value=0>Janet Jackson<br>
+        <input type="radio" name="q5" value=1>Ciara<br>
+    </blockquote>
+</div>
+
+<button type="submit" value="submit" onclick="calculateScore()">Check Your Score!</button>
+
+</div>
+
+<script>
+    function calculateScore() {
+        let input = document.getElementsByTagName("input"),
+            count = 0,
+            main = document.getElementById("main");
+        for (let i = 0; i<input.length; i++)
+            if (input[i].value === "1" && input[i].checked) count++;
+        main.innerHTML =
+            "<h2>" + resultMessage(count) + "</h2>" +
+            "<button type=\"button\" onclick=\"location.reload(true)\">Try Again!</button>";
+    }
+
+    function resultMessage(score) {
+        switch(score){
+            case 0:
+                return "Umm... you got nothing right. Did you even try?";
+            case 1:
+                return "Well... you got one question right, but four questions completely wrong. Let's just pretend this quiz didn't happen.";
+            case 2:
+                return "You only got two answers correct. Studies show you probably enjoy listening to new Drake.";
+            case 3:
+                return "Three out of five questions correct. You probably miss the old Kanye.";
+            case 4:
+                return "Four out of five correct! You are a Kanye genius and there is no other way to word it.";
+            case 5:
+                return "All correct! You are a Kanye God.";
+        }
+    }
+</script>
+
+</body>
+</html>
