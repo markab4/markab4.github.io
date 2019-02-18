@@ -1,0 +1,29 @@
+body {
+    background-color: #c1a0a4;
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+iframe {
+    width: 50vw;
+    height: 50vw;
+}
+
+#mood-button {
+    height: 7vh;
+    width: 15vw;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15pt;
+}
+
+#ring {
+    font-size: 100pt;
+    /*display: none;*/
+}
+
+img {
+    margin: 0 auto;
+    display: none;
+}
