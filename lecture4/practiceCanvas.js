@@ -16,22 +16,22 @@ let ball = {
         context.translate(ballCenter.x, ballCenter.y);
         this.rotation += 0.01;
         context.rotate(this.rotation);
-        context.translate(-ballCenter.x, -ballCenter.y);
         context.scale(this.scale, this.scale);
-        context.drawImage(this.img, this.x, this.y);
+        context.translate(-ballCenter.x, -ballCenter.y);
 
+        context.drawImage(this.img, this.x, this.y);
     },
 
     // Move the ball
     move: function() {
         this.x += this.xInc;
-        this.y += this.yInc;
-
         // Bounce off the left and right canvas edges
         if (this.x < 0 || this.x + this.img.width > canvas.width) {
             this.xInc *= -1;
             this.scale += 0.1;
         }
+
+        this.y += this.yInc;
         if (this.y < 0 || this.y + this.img.height > canvas.height) {
             this.yInc *= -1;
             this.scale += 0.1;
@@ -48,12 +48,12 @@ ball.draw();
 let animFrameId;
 
 // Start the animation when the mouse is on the canvas
-canvas.addEventListener("mouseover", function(e) {
+canvas.addEventListener("mouseover", function() {
     animFrameId = window.requestAnimationFrame(drawFrame);
 });
 
 // Stop the animation when the mouse is moved off the canvas
-canvas.addEventListener("mouseout", function(e) {
+canvas.addEventListener("mouseout", function() {
     window.cancelAnimationFrame(animFrameId);
 });
 

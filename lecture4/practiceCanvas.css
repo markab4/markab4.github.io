@@ -1,3 +1,13 @@
 body {
     background-color: burlywood;
 }
+
+#canvas-container {
+    width: 100%;
+    text-align: center;
+}
+
+canvas {
+    border: 10px solid gray;
+    display: inline;
+}
