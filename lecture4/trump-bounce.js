@@ -1,28 +1,28 @@
-let ball = {
+let head = {
     x: 10,
     y: 10,
     xInc: 3,
     yInc: 3,
     scale: 1,
-    img: document.getElementById("basketball"),
+    img: document.getElementById("head"),
     rotation: 0,
 
-    // Draw the ball
+    // Draw the head
     draw: function() {
-        let ballCenter = {
+        let headCenter = {
             x: this.x + this.img.width / 2,
             y: this.y + this.img.height / 2
         };
-        context.translate(ballCenter.x, ballCenter.y);
+        context.translate(headCenter.x, headCenter.y);
         this.rotation += 0.01;
         context.rotate(this.rotation);
         context.scale(this.scale, this.scale);
-        context.translate(-ballCenter.x, -ballCenter.y);
+        context.translate(-headCenter.x, -headCenter.y);
 
         context.drawImage(this.img, this.x, this.y);
     },
 
-    // Move the ball
+    // Move the head
     move: function() {
         this.x += this.xInc;
         // Bounce off the left and right canvas edges
@@ -42,8 +42,8 @@ let ball = {
 let canvas = document.getElementById("myCanvas"),
     context = canvas.getContext("2d");
 
-// Draw initial ball
-ball.draw();
+// Draw initial head
+head.draw();
 
 let animFrameId;
 
@@ -63,8 +63,8 @@ function drawFrame() {
     context.beginPath();
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    ball.draw();
-    ball.move();
+    head.draw();
+    head.move();
 
     context.restore();
     animFrameId = window.requestAnimationFrame(drawFrame);
