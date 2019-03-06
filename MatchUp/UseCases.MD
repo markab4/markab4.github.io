@@ -1,4 +1,4 @@
-#Match Up
+# Match Up
 Match Up is a matching game which tests the player's memory. A deck of cards with pairs is laid out face down in a grid. The player needs to match each pair to win, while only being able to flip two cards at a time.
 
 ## Use Cases
