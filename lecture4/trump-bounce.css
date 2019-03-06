@@ -1,5 +1,8 @@
 body {
     background-color: burlywood;
+    font-family: "Helvetica Neue", sans-serif;
+    color: darkslategrey;
+    text-align: center;
 }
 
 #canvas-container {

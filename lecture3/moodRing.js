@@ -1,4 +1,3 @@
-
 let text = document.getElementById("mood-statement"),
     video = document.getElementById("video"),
     ring = document.getElementById("ring"),
@@ -14,11 +13,12 @@ rings = [
     ["yellow", "You are feeling FEAR 😱... There are many people in the world capable of doing terrible things. Not to mention, there is lightning striking all over the world.", "https://www.youtube.com/embed/mw2kKyJu9gY?start=126&autoplay=1", "https://media2.giphy.com/media/14ut8PhnIwzros/giphy.gif?cid=3640f6095c69fcb669592f3041195ce1"], // run
     ["darkslategray", "You may be HEARTBROKEN 💔 now, but worry not -- your heart will go on.", "https://www.youtube.com/embed/DNyKDI9pn0Q?autoplay=1", "https://media2.giphy.com/media/pynZagVcYxVUk/giphy.gif?cid=3640f6095c69fc2a707852336320dbb3"] // titanic
 ];
+
 function changeMood() {
     let mood = rings[Math.floor(Math.random() * 7)];
     text.innerText = mood[1];
     document.body.style.backgroundColor = mood[0];
-    if (mood[0] !== "indianred"){
+    if (mood[0] !== "indianred") {
         video.style.display = "none";
         gif.src = mood[3];
         gif.style.display = "block";
