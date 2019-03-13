@@ -2,7 +2,7 @@
 
 A browser application to test typing speed and accuracy. Counts the number of typing errors made, calculates Words Per Minute (WPM), and randomizes test text from a collection of over 1600 pithy quotes.
 
-[Live here!](./index.html)
+[Live here!](https://markab4.github.io/Typing-Test/index.html)
 
 ## Visual Design
 
