@@ -10,7 +10,7 @@ A browser application to test typing speed and accuracy. Counts the number of ty
 
 ## User Stories
 
-* On page load, the application fetches a random **new quote** from a JSON with a collection of famous quotes and authors
+* On page load, the application fetches a random **new quote** from a JavaScript Object with a collection of popular quotes and authors
     * This quote becomes the "test text" which a user must copy exactly
 * An event listener **starts the timer** running when the user starts typing
 * Another event listener performs a **spellcheck** for every character the user types
