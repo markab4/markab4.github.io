@@ -1,0 +1,359 @@
+/*
+Garamond 300, 400, 500, 600
+Open Sans 300
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600|Open+Sans+Condensed:300');
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    display: none;
+}
+
+nav ul {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #088daa;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #06b8e0;
+}
+
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    z-index: 100;
+}
+
+.name a {
+    color: black;
+}
+
+.name a:hover {
+    color: #088daa;
+}
+
+#navBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 22px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#navBtn:hover span {
+    background-color: #088daa;
+}
+
+#navBtn span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#navBtn span:nth-child(1) {
+    top: 0;
+}
+
+#navBtn span:nth-child(2), #navBtn span:nth-child(3) {
+    top: 8px;
+}
+
+#navBtn span:nth-child(4) {
+    top: 16px;
+}
+
+#navBtn.open span:nth-child(1) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+
+#navBtn.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#navBtn.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#navBtn.open span:nth-child(4) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+
+header div.name {
+    margin: 40px 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 16px;
+}
+
+img + h4, div + h4 {
+    margin-top: 30px;
+}
+
+p.sub {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+section {
+    position: relative;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border-bottom: 1px white solid;
+}
+
+section div {
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: none;
+}
+
+section:hover {
+    cursor: pointer;
+}
+
+section div h3, section div p {
+    font-weight: 300;
+}
+
+.portHead {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    -webkit-filter: blur(35px);
+    -moz-filter: blur(35px);
+    -o-filter: blur(35px);
+    -ms-filter: blur(35px);
+    filter: blur(35px);
+    z-index: -1;
+
+}
+
+.portCont {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 50px auto 40px auto;
+    padding: 20px;
+    background-color: white;
+    z-index: 100;
+}
+
+.portCont img {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    text-align: left;
+    padding-bottom: 7px;
+}
+
+td:first-child {
+    margin-right: 20px;
+}
+
+td:last-child {
+    text-align: right;
+    width: 100px;
+    vertical-align: top;
+}
+
+.footerPadding {
+    width: 100%;
+    height: 45px;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.addthis_inline_follow_toolbox_1yj7 {
+    margin: 10px auto 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 100vw;
+        height: 75vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 481px) {
+    section {
+        width: 50vw;
+        height: 50vw;
+    }
+    .projectThumb:nth-child(odd) section {
+        width: calc(50vw - 1px);
+        border-right: 1px white solid;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    section {
+        width: 33.3333vw;
+        height: 33.3333vw;
+    }
+    .projectThumb:nth-child(1n + 2) section {
+        width: calc(33.3333vw - 1px);
+        border-right: 1px white solid;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    section {
+        width: 25vw;
+        height: 25vw;
+    }
+    .projectThumb:nth-child(1n + 3) section {
+        width: calc(25vw - 1px);
+        border-right: 1px white solid;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .portCont {
+        margin: 50px 20px 40px 20px;
+        width: calc(100% - 80px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

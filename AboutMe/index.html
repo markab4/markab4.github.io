@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>About Mark Abramov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav>
+    <ul>
+        <li><h1><a href="index.html">About Me</a></h1></li>
+        <li><h1><a href="https://github.com/markab4/">My GitHub</a></h1></li>
+        <li><h1><a href="https://www.linkedin.com/in/mark-abramov/">My LinkedIn</a></h1></li>
+        <li><h1><a href="https://github.com/markab4?tab=repositories">My Projects</a></h1></li>
+        <li><h1><a href="https://docs.google.com/document/d/1Un_s17ZD2VgXNyS1to7eQHV1V6oK1ykb4DGm9M3w-s0/edit?usp=sharing">Resume</a></h1></li>
+    </ul>
+</nav>
+<header>
+    <div id="navBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="name">
+        <h1><a href="index.html">Mark Abramov</a></h1>
+        <h2>Queens College student studying Computer Science, Interaction Design, and Mathematics</h2>
+    </div>
+</header>
+<div class="portHead" style="background-image: url(img/venice.jpg);"></div>
+<div class="portCont">
+    <h1>About Me</h1>
+    <img src="img/me.jpg">
+    <br>
+    <br>
+    <p>I am an undergrad student at Queens College, the City University of New York, in my last semester. In May, I will graduate with a Bachelors of Computer Science. I also minor in Interaction Design and Mathematics.</p>
+    <p>This semester I am taking the following courses: Natural Language Processing, Software Engineering, Information Design, Web Design II, and Information Design. I am also doing the CodePath Android Bootcamp, a twelve week project-focused Android training course including weekly projects and labs, as well as a collaborative course-wide group project.</p>
+    <p><a href="https://github.com/markab4?tab=repositories">My GitHub</a> has many of my projects and design prototypes. Last summer, I interned at Sapient Razorfish, a digital technology consultancy, where I pushed production code and provided responsive front-end development for the <a href="https://www.mbvans.com/sprinter/home">Mercedes-Benz</a> and <a href="https://www.freightlinersprinterusa.com/freightliner/home">Freightliner</a> Vans websites.</p>
+    <br>
+</div>
+<script>
+    $(document).ready(function() {
+        var navClicked = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('section').children('div').show();
+        } else {
+            $('section').hover(function() {
+                $(this).children('div').slideDown(300);
+            }, function() {
+                $(this).children('div').slideUp(300);
+            })
+        }
+        $('#navBtn').click(function(){
+            $(this).toggleClass('open');
+            if (!navClicked) {
+                navClicked = true;
+                $('nav').slideDown(300);
+            } else {
+                navClicked = false;
+                $('nav').slideUp(300);
+            }
+        });
+    })
+</script>
+</body>
+</html>
