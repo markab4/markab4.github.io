@@ -24,7 +24,7 @@ nav ul {
     color: white;
 }
 
-a {
+h1 a {
     color: black;
     text-decoration: none;
 }
@@ -282,12 +282,14 @@ td:last-child {
     float: left;
 }
 
-footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: rgba(255,255,255,0.75);
+#chart {
+    position: relative;
 }
+
+#dv-98db6b1553807833629 {
+    margin: 0 auto;
+}
+
 
 .addthis_inline_follow_toolbox_1yj7 {
     margin: 10px auto 0 auto;

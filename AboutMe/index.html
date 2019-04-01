@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -13,7 +12,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 <nav>
     <ul>
@@ -21,7 +21,9 @@
         <li><h1><a href="https://github.com/markab4/">My GitHub</a></h1></li>
         <li><h1><a href="https://www.linkedin.com/in/mark-abramov/">My LinkedIn</a></h1></li>
         <li><h1><a href="https://github.com/markab4?tab=repositories">My Projects</a></h1></li>
-        <li><h1><a href="https://docs.google.com/document/d/1Un_s17ZD2VgXNyS1to7eQHV1V6oK1ykb4DGm9M3w-s0/edit?usp=sharing">Resume</a></h1></li>
+        <li><h1><a
+                href="https://docs.google.com/document/d/1Un_s17ZD2VgXNyS1to7eQHV1V6oK1ykb4DGm9M3w-s0/edit?usp=sharing">Resume</a>
+        </h1></li>
     </ul>
 </nav>
 <header>
@@ -42,24 +44,39 @@
     <img src="img/me.jpg">
     <br>
     <br>
-    <p>I am an undergrad student at Queens College, the City University of New York, in my last semester. In May, I will graduate with a Bachelors of Computer Science. I also minor in Interaction Design and Mathematics.</p>
-    <p>This semester I am taking the following courses: Natural Language Processing, Software Engineering, Information Design, Web Design II, and Information Design. I am also doing the CodePath Android Bootcamp, a twelve week project-focused Android training course including weekly projects and labs, as well as a collaborative course-wide group project.</p>
-    <p><a href="https://github.com/markab4?tab=repositories">My GitHub</a> has many of my projects and design prototypes. Last summer, I interned at Sapient Razorfish, a digital technology consultancy, where I pushed production code and provided responsive front-end development for the <a href="https://www.mbvans.com/sprinter/home">Mercedes-Benz</a> and <a href="https://www.freightlinersprinterusa.com/freightliner/home">Freightliner</a> Vans websites.</p>
-    <br>
+    <p>I am an undergrad student at Queens College, the City University of New York, in my last semester. In May, I will
+        graduate with a Bachelors of Computer Science. I also minor in Interaction Design and Mathematics.</p><br>
+    <p>This semester I am taking the following courses: Natural Language Processing, Software Engineering, Information
+        Design, Web Design II, and Information Design. I am also doing the CodePath Android Bootcamp, a twelve week
+        project-focused Android training course including weekly projects and labs, as well as a collaborative
+        course-wide group project.</p><br>
+    <p><a href="https://github.com/markab4?tab=repositories">My GitHub</a> has many of my projects and design
+        prototypes. Last summer, I interned at Sapient Razorfish, a digital technology consultancy, where I pushed
+        production code and provided responsive front-end development for the <a
+                href="https://www.mbvans.com/sprinter/home">Mercedes-Benz</a> and <a
+                href="https://www.freightlinersprinterusa.com/freightliner/home">Freightliner</a> Vans websites.</p><br>
+    <p>In my Information Design, we are learning many best practices and techniques for data visualisation, an example of which follows.</p>
+</div>
+<div id="chart" style="position:relative; text-align: center">
+    <iframe id="dv-98db6b1553807833629" src="https://s3.amazonaws.com/datavisual/embeds/e2ffb96b52.html"
+            style="height:500px; margin:0 auto; max-width:800px; width:100%; border: 0; background-color: #000000; overflow: hidden; visibility: hidden;"
+            scrolling="no" data-height="500" data-width="800"></iframe>
+    <script src="https://s3.amazonaws.com/datavisual/js/responsive.js#!dv-98db6b1553807833629,e2ffb96b52.html"></script>
+    <script src="https://s3.amazonaws.com/datavisual/js/lazyLoad.js#!dv-98db6b1553807833629,e2ffb96b52.html"></script>
 </div>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         var navClicked = false;
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('section').children('div').show();
         } else {
-            $('section').hover(function() {
+            $('section').hover(function () {
                 $(this).children('div').slideDown(300);
-            }, function() {
+            }, function () {
                 $(this).children('div').slideUp(300);
             })
         }
-        $('#navBtn').click(function(){
+        $('#navBtn').click(function () {
             $(this).toggleClass('open');
             if (!navClicked) {
                 navClicked = true;
