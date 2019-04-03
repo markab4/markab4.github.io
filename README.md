@@ -1,7 +1,10 @@
-# JavaScript 101
+# JavaScript Frameworks and Libraries
+This repo contains exercises in JavaScript and JS frameworks and libraries.
 
-This website contains simple JS exercises for a class of design students.
+* [Weather App](https://markab4.github.io/Carousel/index.html): Using jQuery and AJAX to make a real-time location-based weather app.
+* [Carousel](https://markab4.github.io/Carousel/index.html): Using jQuery to make a carousel of images
+* [Trump Bounce](https://markab4.github.io/TrumpBounce/index.html): Practicing Canvas.js to create animations
+* [Mood Ring](https://markab4.github.io/MoodRing/index.html): A dynamic mood ring website including 2-D arrays and YouTube videos, using vanilla JS
+* [Quiz](https://markab4.github.io/Quiz/KanyeQuiz/index.html): An HTML/CSS/JS online quiz
 
-* [Lecture 2](https://markab4.github.io/lecture2/KanyeQuiz/index.html): Creating a simple HTML/CSS/JS online quiz
-* [Lecture 3](https://markab4.github.io/lecture3/moodRing.html): Creating a dynamic mood ring website, including 2-D arrays and YouTube videos
-* [Lecture 4](https://markab4.github.io/lecture4/trump-bounce.html): Practicing Canvas.js to create animations
+Want to learn more [about me](AboutMe/index.html)?
