@@ -24,7 +24,7 @@ span {
 
 .container {
     max-width: 550px;
-    height: 100vh;
+    height: 80vh;
     border: 1px solid black;
     margin: 0 auto;
     display: grid;
