@@ -62,7 +62,7 @@ header {
 #navBtn {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     width: 28px;
     height: 22px;
     -webkit-transform: rotate(0deg);
