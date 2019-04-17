@@ -1,4 +1,4 @@
-# Mark Abramov's Selected Projects
+## Mark Abramov's Projects
 
 Want to learn more [about me](AboutMe/index.html)?
 
