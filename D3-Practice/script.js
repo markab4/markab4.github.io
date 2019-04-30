@@ -31,7 +31,12 @@ d3.csv("example-data.csv", function (error, data) {
             });
 
     bar.append("rect")
-        .attr("width", function (d) {
+            .attr("width", 0)
+        .transition()
+            .duration(1000)
+            .ease('bounce')
+            .style("opacity", 1)
+            .attr("width", function (d) {
             return w(d.value);
         })
         .attr("height", barHeight - 1)
