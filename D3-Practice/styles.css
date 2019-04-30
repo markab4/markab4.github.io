@@ -1,0 +1,14 @@
+#chart text {
+    fill: black;
+    font: 10px Arial;
+    text-anchor: end;
+}
+
+svg {
+    background-color: #009B3A;
+}
+
+.xaxis path, .xaxis line {
+    fill: none;
+    stroke: white;
+}
