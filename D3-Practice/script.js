@@ -2,6 +2,10 @@
 d3.csv("example-data.csv", function (error, data) {
 
     console.log(data);
+
+    let tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tip");
     let margin = {
         top: 30,
         right: 15,
@@ -41,6 +45,20 @@ d3.csv("example-data.csv", function (error, data) {
         })
         .attr("height", barHeight - 1)
         .style("fill", "#FED100");
+    bar.on('mouseover', function(d) {
+            return tooltip
+                .html("<p>" + d.title + "</p>")
+                .style("visibility", "visible")
+        })
+        .on("mousemove", function() {
+            return tooltip
+                .style("top", d3.event.pageY + 'px')
+                .style("left", d3.event.pageX + 'px')
+        })
+        .on("mouseout", function(){
+            return tooltip
+                .style('visibility', 'hidden')
+        });
 
     bar.append("text")
         .attr("x", function (d) {
