@@ -23,6 +23,7 @@ Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 ### Mobile Development
 Applications developed for mobile devices.
 
+* [Grocery List Manager](https://markab4.github.io/Grocery-List-Manager/): An Android app to make shopping and managing grocery lists more convenient
 * [Mark's Instagram](https://github.com/markab4/MarksInstagram): An Android photo sharing app similar to Instagram but using Parse as its backend
 * [Simple Twitter](https://github.com/markab4/SimpleTwitter): Android app that allows a user to view their Twitter timeline
 * [Flixter](https://github.com/markab4/Flixter): An Android app which lets users view currently playing movie information and trailers sourced from the The Movie Database API.
