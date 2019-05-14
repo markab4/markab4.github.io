@@ -7,6 +7,7 @@ See my [public repositories on GitHub](https://github.com/markab4?tab=repositori
 ### Web Development
 Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 
+* [Queens College Demographics](https://venus.cs.qc.cuny.edu/~abma2399/QC-Demographic-Maps/): Using D3 and other tools to create data visualisations of Queens College demographics
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
 * [Analog Clock](https://venus.cs.qc.cuny.edu/~abma2399/analog-clock/): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
@@ -33,7 +34,7 @@ Applications developed for mobile devices.
 ### Computer Science Projects
 Projects dealing with computer science theory and methods of processing information
 
-* [Naive Bayes Classifier](https://github.com/markab4/Naive-Bayes-Classifier): Python implementation of a Naïve Bayes classifier with bag-of-word (BOW) features and Add-one smoothing. Experimentation with binary NB.
+* [Naive Bayes Classifier](https://markab4.github.io/Naive-Bayes-Classifier/): Python implementation of a Naïve Bayes classifier with bag-of-word (BOW) features and Add-one smoothing. Experimentation with binary NB.
 * [Language Modelling](https://github.com/markab4/Language-Modeling-in-Python): Python program to train several language models and evaluate them on two test corpora.
 * [Shell Interface](https://github.com/markab4/shell-interface): A shell interface that accepts user commands and executes each command in a separate process external to the JVM
 * [Expression Trees](https://github.com/markab4/ExpressionTree): Java program that processes mathematical expressions that are provided as strings by creating Expression Trees
