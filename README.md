@@ -7,7 +7,7 @@ See my [public repositories on GitHub](https://github.com/markab4?tab=repositori
 ### Web Development
 Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 
-* [Queens College Demographics](https://venus.cs.qc.cuny.edu/~abma2399/QC-Demographic-Maps/): Using D3 and other tools to create data visualisations of Queens College demographics
+* [Queens College Diversity](http://markab4.github.io/QC-Diversity): Using D3 and other tools to create data visualisations of Queens College demographics
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
 * [Analog Clock](https://venus.cs.qc.cuny.edu/~abma2399/analog-clock/): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
