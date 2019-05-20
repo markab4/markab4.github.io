@@ -7,9 +7,9 @@ See my [public repositories on GitHub](https://github.com/markab4?tab=repositori
 ### Web Development
 Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 
-* [Queens College Diversity](http://markab4.github.io/QC-Diversity): Using D3 and other tools to create data visualisations of Queens College demographics
+* [Queens College Diversity](http://markab4.github.io/QC-Diversity/index.html): Using D3 and other tools to create data visualisations of Queens College demographics
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
-* [Analog Clock](https://venus.cs.qc.cuny.edu/~abma2399/analog-clock/): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
+* [Analog Clock](https://markab4.github.io/analog-clock/index.html): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
 * [Carousel](Carousel/index.html): Using jQuery to make a carousel of images
 * [Trump Bounce](TrumpBounce/index.html): Practicing Canvas.js to create animations
@@ -26,7 +26,7 @@ Applications developed for mobile devices.
 * [Grocery List Manager](https://markab4.github.io/Grocery-List-Manager/): An Android app to make shopping and managing grocery lists more convenient
 * [Mark's Instagram](https://github.com/markab4/MarksInstagram): An Android photo sharing app similar to Instagram but using Parse as its backend
 * [Simple Twitter](https://github.com/markab4/SimpleTwitter): Android app that allows a user to view their Twitter timeline
-* [Flixter](https://github.com/markab4/Flixter): An Android app which lets users view currently playing movie information and trailers sourced from the The Movie Database API.
+* [Flixter](https://markab4.github.io/Flixter/): An Android app which lets users view currently playing movie information and trailers sourced from the The Movie Database API.
 * [Tip Calculator](https://github.com/markab4/Tip-Calculator): Android app that outputs tip amount and total amount each person should pay.
 * [To-Do App](https://github.com/markab4/SimpleTodo): An Android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 * [Split](https://markab4.github.io/split/): Prototype, UI/UX, brand and visual design for an iOS mobile bill-splitting app
