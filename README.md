@@ -6,23 +6,26 @@ See my [public repositories on GitHub](https://github.com/markab4?tab=repositori
 
 ### Web Development
 Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
+#### Projects
 
 * [Queens College Diversity](http://markab4.github.io/QC-Diversity/index.html): Using D3 and other tools to create data visualisations of Queens College demographics
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
-* [Analog Clock](https://markab4.github.io/analog-clock/index.html): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
-* [Carousel](Carousel/index.html): Using jQuery to make a carousel of images
-* [Trump Bounce](TrumpBounce/index.html): Practicing Canvas.js to create animations
-* [Mood Ring](MoodRing/index.html): A dynamic mood ring website including 2-D arrays and YouTube videos, using vanilla JS
-* [Quiz](Quiz/index.html): An HTML/CSS/JS online quiz
 * [URL Analyzer](https://venus.cs.qc.cuny.edu/~abma2399/cs355/urlanalyzer.html): Practice using HTML/CSS/JS, the DOM, AJAX,  Json, and Canvas.js to create a web interface to obtain and analyze a set of URLs
 * [IP Address Manager](https://venus.cs.qc.cuny.edu/~abma2399/cs355/IPAddressManager.html): Uses vanilla JavaScript to provide an interface for assigning and managing IP addresses for the various types
 * [Tumblër](https://venus.cs.qc.cuny.edu/~abma2399/iot-tumbler/public/): Using Bootstrap to create a responsive website design and prototype for an IoT device
 * [Ask-Lawrence](https://ask-lawrence.herokuapp.com): Design and implementation for both front-end (client-side) and back-end (server-side) functionality to support a rudimentary search engine.
 
+#### Exercises
+* [Analog Clock](https://markab4.github.io/analog-clock/index.html): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
+* [Carousel](Carousel/index.html): Using jQuery to make a carousel of images
+* [Trump Bounce](TrumpBounce/index.html): Practicing Canvas.js to create animations
+* [Mood Ring](MoodRing/index.html): A dynamic mood ring website including 2-D arrays and YouTube videos, using vanilla JS
+
 ### Mobile Development
 Applications developed for mobile devices.
 
+* [OnTrack](https://android-on-track.github.io/on-track/): An app for students looking to increase their daily focus and drive by making their productivity more tangible, inspired by Scrum, an Agile project management framework engineers use to address complex problems.
 * [Grocery List Manager](https://markab4.github.io/Grocery-List-Manager/): An Android app to make shopping and managing grocery lists more convenient
 * [Mark's Instagram](https://github.com/markab4/MarksInstagram): An Android photo sharing app similar to Instagram but using Parse as its backend
 * [Simple Twitter](https://github.com/markab4/SimpleTwitter): Android app that allows a user to view their Twitter timeline
