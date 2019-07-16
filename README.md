@@ -38,6 +38,7 @@ Applications developed for mobile devices.
 ### Computer Science Projects
 Projects dealing with computer science theory and methods of processing information
 
+* [Multi-threading](https://github.com/markab4/multithreading): Java programs in multithreading concurrency and performance optimization
 * [Naive Bayes Classifier](https://markab4.github.io/Naive-Bayes-Classifier/): Python implementation of a Naïve Bayes classifier with bag-of-word (BOW) features and Add-one smoothing. Experimentation with binary NB.
 * [Language Modelling](https://github.com/markab4/Language-Modeling-in-Python): Python program to train several language models and evaluate them on two test corpora.
 * [Shell Interface](https://github.com/markab4/shell-interface): A shell interface that accepts user commands and executes each command in a separate process external to the JVM
