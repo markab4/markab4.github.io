@@ -26,7 +26,6 @@ const budgetController = (function () {
     return {
         addItem: function (type, des, val) {
             // Create new ID, incrementing on last ID, or setting to 0 if it is the first element
-            console.log(data);
             let ID = (data.allItems[type].length) ? data.allItems[type][data.allItems[type].length - 1].id + 1 : 0;
 
             // Create new item based on "inc" or "exp" type
@@ -101,6 +100,20 @@ const UIController = (function () {
             //Insert HTML into the DOM
             element.insertAdjacentHTML("beforeend", html);
         },
+        clearFields: function() {
+            let fields, fieldsArr;
+            fields = document.querySelectorAll("." + domElements.inputDescription.className + ", ." +
+                domElements.inputValue.className);
+
+            fieldsArr = Array.prototype.slice.call(fields);
+
+            fieldsArr.forEach(function(current, index, array) {
+                current.value = "";
+            });
+
+            fieldsArr[0].focus();
+
+        },
 
         getDomElements: function () {
             return domElements;
@@ -132,6 +145,10 @@ const controller = (function (budgetCtrl, UICtrl) {
 
         // 3. Add the item to the UI
         UICtrl.addListItem(newItem, input.type);
+
+        // 3A. Clear the fields
+        UICtrl.clearFields();
+
         // 4. Calculate the budget
         // 5. Display the budget on the UI
     };
