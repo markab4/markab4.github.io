@@ -131,24 +131,31 @@ const UIController = (function () {
         dateLabel: document.querySelector('.budget__title--month')
     };
 
-    let formatNumber = function(num, type) {
+    let formatNumber = function (num, type) {
         // + or - before number
         // exactly 2 decimal places
         // comma separating the thousands
 
         let numSplit = Math.abs(num).toFixed(2).split(".");
-        console.log(numSplit);
         let int = numSplit[0];
         let dec = numSplit[1];
 
-        if(int.length > 3) {
-            int  = int.substr(0, int.length - 3) + "," + int.substr(int.length-3, 3);
+        if (int.length > 3) {
+            int = int.substr(0, int.length - 3) + "," + int.substr(int.length - 3, 3);
         }
         return (type === "exp" ? "- " : "+ ") + int + "." + dec;
 
     };
 
+    let nodeListForEach = function (list, callback) {
+        for (let i = 0; i < list.length; i++) {
+            callback(list[i], i);
+        }
+    };
+
+
     return {
+
         getInput: function () {
             return {
                 type: domElements.inputType.value, // will be either inc or exp
@@ -224,18 +231,13 @@ const UIController = (function () {
 
         displayPercentages: function (percentages) {
 
-            let nodeListForEach = function (list, callback) {
-                for (let i = 0; i < list.length; i++) {
-                    callback(list[i], i);
-                }
-            };
             nodeListForEach(document.querySelectorAll(domElements.expensesPercLabels), function (current, index) {
                 current.textContent = percentages[index] > 0 ? percentages[index] + "%" : "---";
             });
         },
 
-        displayMonth: function() {
-            let now, year, month, months;
+        displayMonth: function () {
+            let now, year, months;
             now = new Date();
             year = now.getFullYear();
             months = ["January", "February", "March", "April", "May", "June",
@@ -245,6 +247,15 @@ const UIController = (function () {
 
         getDomElements: function () {
             return domElements;
+        },
+        changedType: function () {
+            let fields = Array(domElements.inputType, domElements.inputDescription, domElements.inputValue);
+            // let fields = document.querySelectorAll("." + domElements.inputType.className +
+            //     ", ." + domElements.inputDescription.className + ", ." + domElements.inputValue.className);
+            nodeListForEach(fields, function (cur) {
+                cur.classList.toggle('red-focus');
+            });
+            domElements.inputBtn.classList.toggle("red");
         }
     };
 })();
@@ -261,6 +272,7 @@ const controller = (function (budgetCtrl, UICtrl) {
             }
         });
         dom.container.addEventListener("click", ctrlDeleteItem);
+        dom.inputType.addEventListener("change", UICtrl.changedType);
     };
 
     let updateBudget = function () {
