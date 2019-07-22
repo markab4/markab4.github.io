@@ -9,6 +9,7 @@ Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 #### Projects
 
 * [Queens College Diversity](http://markab4.github.io/QC-Diversity/index.html): Using D3 and other tools to create data visualisations of Queens College demographics
+* [Budget App](https://markab4.github.io/Budgety/): A single-page budget app allowing users to add incomes and expenses for a certain month. The app calculates how much money has been made and spent, and displays a budget for the month.
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
 * [URL Analyzer](https://venus.cs.qc.cuny.edu/~abma2399/cs355/urlanalyzer.html): Practice using HTML/CSS/JS, the DOM, AJAX,  Json, and Canvas.js to create a web interface to obtain and analyze a set of URLs
