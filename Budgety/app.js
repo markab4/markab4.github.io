@@ -127,8 +127,27 @@ const UIController = (function () {
         expensesLabel: document.querySelector('.budget__expenses--value'),
         percentageLabel: document.querySelector('.budget__expenses--percentage'),
         container: document.querySelector(".container"),
-        expensesPercLabels: ".item__percentage"
+        expensesPercLabels: ".item__percentage",
+        dateLabel: document.querySelector('.budget__title--month')
     };
+
+    let formatNumber = function(num, type) {
+        // + or - before number
+        // exactly 2 decimal places
+        // comma separating the thousands
+
+        let numSplit = Math.abs(num).toFixed(2).split(".");
+        console.log(numSplit);
+        let int = numSplit[0];
+        let dec = numSplit[1];
+
+        if(int.length > 3) {
+            int  = int.substr(0, int.length - 3) + "," + int.substr(int.length-3, 3);
+        }
+        return (type === "exp" ? "- " : "+ ") + int + "." + dec;
+
+    };
+
     return {
         getInput: function () {
             return {
@@ -157,7 +176,7 @@ const UIController = (function () {
                 html = "<div class=\"item clearfix\" id=\"exp-%id%\">\n" +
                     "  <div class=\"item__description\">%description%</div>\n" +
                     "  <div class=\"right clearfix\">\n" +
-                    "  <div class=\"item__value\">- %value%</div>\n" +
+                    "  <div class=\"item__value\">%value%</div>\n" +
                     "  <div class=\"item__percentage\">21%</div>\n" +
                     "  <div class=\"item__delete\">\n" +
                     "  <button class=\"item__delete--btn\"><i class=\"ion-ios-close-outline\"></i></button>\n" +
@@ -169,7 +188,7 @@ const UIController = (function () {
             // Replace the placeholder text with some actual data
             html = html.replace('%id', obj.id)
                 .replace("%description%", obj.description)
-                .replace("%value%", obj.value);
+                .replace("%value%", formatNumber(obj.value));
             //Insert HTML into the DOM
             element.insertAdjacentHTML("beforeend", html);
         },
@@ -194,23 +213,34 @@ const UIController = (function () {
         },
 
         displayBudget: function (obj) {
-            domElements.budgetLabel.textContent = obj.budget;
-            domElements.incomeLabel.textContent = obj.totalInc;
-            domElements.expensesLabel.textContent = obj.totalExp;
+            let type = obj.budget >= 0 ? "inc" : "exp";
+
+            domElements.budgetLabel.textContent = formatNumber(obj.budget);
+            domElements.incomeLabel.textContent = formatNumber(obj.totalInc, "inc");
+            domElements.expensesLabel.textContent = formatNumber(obj.totalExp, "exp");
 
             domElements.percentageLabel.textContent = (obj.percentage > 0) ? obj.percentage + "%" : "---";
         },
 
-        displayPercentages: function(percentages){
+        displayPercentages: function (percentages) {
 
-            let nodeListForEach = function(list, callback){
-                for(let i=0; i<list.length;i++){
+            let nodeListForEach = function (list, callback) {
+                for (let i = 0; i < list.length; i++) {
                     callback(list[i], i);
                 }
             };
-            nodeListForEach(document.querySelectorAll(domElements.expensesPercLabels), function(current, index){
+            nodeListForEach(document.querySelectorAll(domElements.expensesPercLabels), function (current, index) {
                 current.textContent = percentages[index] > 0 ? percentages[index] + "%" : "---";
             });
+        },
+
+        displayMonth: function() {
+            let now, year, month, months;
+            now = new Date();
+            year = now.getFullYear();
+            months = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
+            domElements.dateLabel.textContent = months[now.getMonth()] + " " + year;
         },
 
         getDomElements: function () {
@@ -300,6 +330,7 @@ const controller = (function (budgetCtrl, UICtrl) {
 
     return {
         init: function () {
+            UICtrl.displayMonth();
             UICtrl.displayBudget({
                 budget: 0,
                 totalInc: 0,
