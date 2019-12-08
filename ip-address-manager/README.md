@@ -1,6 +1,6 @@
 # IP Address Manager
 
-This repo provides an interface for assigning and managing IP addresses for the various types and is live [here.](https://venus.cs.qc.cuny.edu/~abma2399/cs355/IPAddressManager.html)
+This repo provides an interface for assigning and managing IP addresses for the various types and is live [here.](https://markab4.github.io/ip-address-manager/IPAddressManager.html)
 
 ### Technologies Used
 * HTML
