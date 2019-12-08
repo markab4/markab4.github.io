@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/29/100_points_Emoji.png">
+    <script src="ipmanager.js"></script>
+    <title>IP Address Manager</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="yourinfo.html">Your Information</a>
+    <a href="urlanalyzer.html">URL Analyzer</a>
+    <a href="#" class="active">IP Address Manager</a>
+    <a href="https://learn.zybooks.com/zybook/QCCSCI355TeitelmanFall2018">Textbook</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="jumbotron text-center">
+    <h1>IP Address Manager</h1>
+</div>
+<div>
+    <br>
+    <button class='retry' type="button" style="margin-bottom: 50px;" onclick="location.reload(true);">Try Again</button>
+</div>
+
+<div id="IP-interface">
+    <div id="number-needed">
+        <h2>How many IP addresses do you require?</h2>
+        <input type='number' id="ipAddressesNeeded" value="100">
+        <input type="submit" value="Submit" onclick="howManyNeeded()">
+    </div>
+    <div id="type-needed">
+        <h2>Please choose which type of address you require:</h2>
+        <ul class="top-level-menu">
+            <li>
+                <a>IPv4</a>
+                <ul class="second-level-menu">
+                    <li onclick='handleIpv4("ipv4 classless")'>
+                        <a href="#">Classless</a></li>
+                    <li>
+                        <a href="#">Classful</a>
+                        <ul class="third-level-menu">
+                            <li onclick='handleIpv4("ipv4 A")'>
+                                <a href="#">A</a>
+                            </li>
+                            <li onclick='handleIpv4("ipv4 B")'>
+                                <a href="#">B</a>
+                            </li>
+                            <li onclick='handleIpv4("ipv4 C")'>
+                                <a href="#">C</a>
+                            </li>
+                            <li onclick='handleIpv4("ipv4 D")'>
+                                <a href="#">D</a>
+                            </li>
+                            <li onclick='handleIpv4("ipv4 E")'>
+                                <a href="#">E</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>IPv6</a>
+                <ul class="second-level-menu">
+                    <li onclick='handleIpv6("ipv6 zero-compression")'>
+                        <a href="#">Apply Zero-Compression</a>
+                    </li>
+                    <li onclick='handleIpv6("ipv6 without zero-compression")'>
+                        <a href="#">Don't Apply Zero-Compression</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div >
+        <table id="output">
+
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

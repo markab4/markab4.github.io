@@ -14,7 +14,11 @@ Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
 * [URL Analyzer](https://venus.cs.qc.cuny.edu/~abma2399/cs355/urlanalyzer.html): Practice using HTML/CSS/JS, the DOM, AJAX,  Json, and Canvas.js to create a web interface to obtain and analyze a set of URLs
 * [IP Address Manager](https://venus.cs.qc.cuny.edu/~abma2399/cs355/IPAddressManager.html): Uses vanilla JavaScript to provide an interface for assigning and managing IP addresses for the various types
-* [Tumblër](https://venus.cs.qc.cuny.edu/~abma2399/iot-tumbler/public/): Using Bootstrap to create a responsive website design and prototype for an IoT device
+* [Tumblër](https://markab4.github.io/iot-tumbler/index.html): Using Bootstrap to create a mobile-responsive website design and prototype for an IoT device
+    * Three pages were fully developed and are live:
+        * [Landing page](https://markab4.github.io/iot-tumbler/public/index.html)
+        * [Appliances catalog](https://markab4.github.io/iot-tumbler/public/appliances.html)
+        * [Product page](https://markab4.github.io/iot-tumbler/public/product.html)
 * [Ask-Lawrence](https://ask-lawrence.herokuapp.com): Design and implementation for both front-end (client-side) and back-end (server-side) functionality to support a rudimentary search engine.
 
 #### Exercises
