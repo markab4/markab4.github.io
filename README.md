@@ -12,7 +12,7 @@ Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
 * [Budget App](https://markab4.github.io/Budgety/): A single-page budget app allowing users to add incomes and expenses for a certain month. The app calculates how much money has been made and spent, and displays a budget for the month.
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
 * [Typing Test](/Typing-Test/index.html): A browser application to test typing speed and accuracy.
-* [URL Analyzer](https://venus.cs.qc.cuny.edu/~abma2399/cs355/urlanalyzer.html): Practice using HTML/CSS/JS, the DOM, AJAX,  Json, and Canvas.js to create a web interface to obtain and analyze a set of URLs
+* [URL Analyzer](https://markab4.github.io/url-analyzer/): Uses HTML/CSS/JS, the DOM, AJAX,  Json, and Canvas.js to create a web interface to obtain and analyze a set of URLs
 * [IP Address Manager](https://markab4.github.io/ip-address-manager/): Uses vanilla JavaScript to provide an interface for assigning and managing IP addresses for the various types (See code)
 * [Tumblër](https://markab4.github.io/iot-tumbler/index.html): Using Bootstrap to create a mobile-responsive website design and prototype for an IoT device
     * Three pages were fully developed and are live:
