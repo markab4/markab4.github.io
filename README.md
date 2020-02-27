@@ -5,9 +5,10 @@ Want to learn more [about me](AboutMe/index.html)?
 See my [public repositories on GitHub](https://github.com/markab4?tab=repositories)!
 
 ### Web Development
-Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
+Work in web development, JavaScript frameworks, and JavaScript libraries.
 #### Projects
 
+* [Mercedes-Benz Style Guide](https://github.com/markab4/mb-styleguide/tree/master): A streamlined [style guide](https://mbusa-styleguide.webflow.io/) for designers working on Mercedes-Benz brands, with custom code integrated in the Webflow CMS to create interactive tools.
 * [Queens College Diversity](http://markab4.github.io/QC-Diversity/index.html): Using D3 and other tools to create data visualisations of Queens College demographics
 * [Budget App](https://markab4.github.io/Budgety/): A single-page budget app allowing users to add incomes and expenses for a certain month. The app calculates how much money has been made and spent, and displays a budget for the month.
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
@@ -21,7 +22,7 @@ Exercises and projects in HTML/CSS/JavaScript, JS frameworks, and JS libraries.
         * [Product page](https://markab4.github.io/iot-tumbler/public/product.html)
 * [Ask-Lawrence](https://ask-lawrence.herokuapp.com): Design and implementation for both front-end (client-side) and back-end (server-side) functionality to support a rudimentary search engine.
 
-#### Exercises
+#### Practice
 * [Analog Clock](https://markab4.github.io/analog-clock/index.html): Using vanilla JS and HTML containing an SVG image of a clock to make a simple and accurate clock that can be placed on any webpage.
 * [Carousel](Carousel/index.html): Using jQuery to make a carousel of images
 * [Trump Bounce](TrumpBounce/index.html): Practicing Canvas.js to create animations
