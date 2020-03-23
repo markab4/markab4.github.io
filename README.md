@@ -8,7 +8,7 @@ See my [public repositories on GitHub](https://github.com/markab4?tab=repositori
 Work in web development, JavaScript frameworks, and JavaScript libraries.
 #### Projects
 
-* [Mercedes-Benz Style Guide](https://github.com/markab4/mb-styleguide/tree/master): A streamlined [style guide](https://mbusa-styleguide.webflow.io/) for designers working on Mercedes-Benz brands, with custom code integrated in the Webflow CMS to create interactive tools.
+* [Mercedes-Benz Style Guide](https://github.com/markab4/mb-styleguide/tree/master): A streamlined [style guide](http://mbstyleguide.andreybalbekov.com) for designers working on Mercedes-Benz brands, with custom code integrated in the Webflow CMS to create interactive tools.
 * [Queens College Diversity](http://markab4.github.io/QC-Diversity/index.html): Using D3 and other tools to create data visualisations of Queens College demographics
 * [Budget App](https://markab4.github.io/Budgety/): A single-page budget app allowing users to add incomes and expenses for a certain month. The app calculates how much money has been made and spent, and displays a budget for the month.
 * [Weather App](WeatherApp/index.html): Using jQuery and AJAX to make a real-time location-based weather app
